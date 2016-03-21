@@ -49,7 +49,10 @@ You can also set additional headers to the redirect response with the `headers` 
 ```
 
 You can also specify the skip urls where the above doesn't apply.(For slashes(false)).
+
+```javascript
 .use(slashes(true, { skip: ["/jp/", "/cn/"] }));
+```
 
 ## Notes
 
