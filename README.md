@@ -48,6 +48,9 @@ You can also set additional headers to the redirect response with the `headers` 
 .use(slashes(true, { headers: { "Cache-Control": "public" } }));
 ```
 
+You can also specify the skip urls where the above doesn't apply.(For slashes(false)).
+.use(slashes(true, { skip: ["/jp/", "/cn/"] }));
+
 ## Notes
 
 1. Only GET requests will be redirected (to avoid losing POST/PUT data)
